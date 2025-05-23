@@ -68,7 +68,7 @@ body {
     font-style: italic;
 }
 
-/* Section and Boxes */
+/* Sections */
 .section {
     margin-bottom: 30px;
 }
@@ -80,7 +80,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Media Layout */
+/* Media Area */
 .media {
     display: flex;
     gap: 20px;
@@ -98,7 +98,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Form Styling */
+/* Contact Form */
 form {
     max-width: 600px;
     margin: auto;
@@ -137,7 +137,7 @@ button:hover {
     height: 250px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -159,7 +159,6 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Thank You Message */
 .thank-you {
     font-size: 1.2rem;
     font-weight: bold;
@@ -168,7 +167,36 @@ button:hover {
     margin-top: 30px;
 }
 
-/* Optional: Dark Mode Support */
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Shop Products Section (Assuming for future use) */
+.product-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional Dark Mode */
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #121212;
@@ -192,31 +220,3 @@ button:hover {
     }
 }
 
-/* Fade-in animation */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Product Layout */
-.product-container {
-    display: flex;
-    gap: 20px; /* space between products */
-    flex-wrap: wrap; /* allows wrapping on smaller screens */
-    justify-content: center; /* center align */
-}
-
-.product {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-}
